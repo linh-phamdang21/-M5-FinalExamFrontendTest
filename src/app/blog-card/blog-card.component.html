@@ -1,0 +1,12 @@
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="http://placeimg.com/640/360/any" alt="Card image cap">
+  <div class="card-body" style="height: 150px">
+<!--    <h5 class="card-title">{{ blog.title }}</h5>-->
+    <p class="card-text"><b>{{blog.title}}</b></p>
+    <br>
+    <a href="#" class="btn btn-primary" [routerLink]="['/blogs/detail/',blog.id]">Detail</a>
+    <a href="#" class="btn btn-secondary" [routerLink]="['/blogs/edit/',blog.id]"><span class="cui-contrast"></span> Edit</a>
+    <a href="#" class="btn btn-danger" (click)="onDelete(blog.id)">Delete</a>
+  </div>
+</div>
